@@ -1,0 +1,34 @@
+[package]
+name = "bit-torrent-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Bencode and encoding
+serde = "1.0.152"
+serde_json = "1.0.91"
+serde_bytes = "0.11.8"
+serde_bencode = "0.2.3"
+serde_derive = "1.0.152"
+percent-encoding = "2.2.0"
+sha1 = "0.10.5"
+hex = "0.4.3"
+bytes = "1.3.0"
+
+#Miscellaneous
+url = "2.3.1"
+reqwest = "0.11.13"
+rand = "0.8.5"
+async-channel = "1.8.0"
+once_cell = "1.17.0"
+futures-util = "0.3.25"
+
+[dependencies.tokio]
+version = "1.23.0"
+features = ["full"]
+
+[dependencies.uuid]
+version = "1.2.2"
+features = [
+    "v4"
+]
